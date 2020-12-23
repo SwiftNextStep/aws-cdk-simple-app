@@ -41,7 +41,7 @@ But for peace of mind, we will set up billings alerts just in case you forget yo
 
 
 
-So what are you waiting to start creating your Infra the same way you write code? A discount code?  So wait no more. Use the code RELEASE and enroll for only $9.99, or click here (https://www.udemy.com/course/aws-cdk-course/?couponCode=RELEASE).
+So what are you waiting to start creating your Infra the same way you write code? Click here (https://www.udemy.com/course/aws-cdk-course/?referralCode=6DA11CA58F11328F8357).
 
 
 
