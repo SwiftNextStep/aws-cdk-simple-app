@@ -1,0 +1,111 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SimpleAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SimpleAppStack.template.json"
+      },
+      "metadata": {
+        "/SimpleAppStack/MySimpleAppBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppBucket6B59014A",
+            "trace": [
+              "new Bucket (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1269:22)",
+              "new SimpleAppStack (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/lib/simple-app-stack.ts:8:20)",
+              "Object.<anonymous> (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/bin/simple-app.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppBucketNameExport",
+            "trace": [
+              "new SimpleAppStack (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/lib/simple-app-stack.ts:12:5)",
+              "Object.<anonymous> (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/bin/simple-app.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Module.m._compile (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "main (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1108:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)",
+              "Module.load (node:internal/modules/cjs/loader:973:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:813:14)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:76:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/SimpleAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/SimpleAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:483:26)",
+              "process.emit (node:events:376:20)",
+              "process.EventEmitter.emit (node:domain:470:12)",
+              "process.emit (/Users/icaro/Documents/Udemy/aws/cdk/simple-app/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "SimpleAppStack": {
+        "id": "SimpleAppStack",
+        "path": "SimpleAppStack",
+        "children": {
+          "MySimpleAppBucket": {
+            "id": "MySimpleAppBucket",
+            "path": "SimpleAppStack/MySimpleAppBucket",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "SimpleAppStack/MySimpleAppBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketEncryption": {
+                      "serverSideEncryptionConfiguration": [
+                        {
+                          "serverSideEncryptionByDefault": {
+                            "sseAlgorithm": "AES256"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "SimpleAppStack/MySimpleAppBucket/Notifications"
+              }
+            }
+          },
+          "MySimpleAppBucketNameExport": {
+            "id": "MySimpleAppBucketNameExport",
+            "path": "SimpleAppStack/MySimpleAppBucketNameExport"
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "SimpleAppStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "SimpleAppStack/CDKMetadata/Default"
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "SimpleAppStack/CDKMetadata/Condition"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
